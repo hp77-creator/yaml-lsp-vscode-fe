@@ -1,0 +1,16 @@
+{
+  "name": "yaml-lsp-fe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vscode": "^1.1.37",
+    "vscode-languageclient": "^9.0.1"
+  }
+}
