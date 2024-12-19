@@ -1,16 +1,44 @@
 {
   "name": "yaml-lsp-fe",
+  "displayName": "YAML Test Files",
+  "description": "YAML Test Files Language Support",
   "version": "1.0.0",
-  "main": "index.js",
+  "publisher": "pchf",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/yaml-lsp-fe"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:yaml"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "yaml",
+      "aliases": ["YAML", "yaml"],
+      "extensions": [".yml", ".yaml"]
+    }]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "yaml",
+    "test files",
+    "lsp"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "vscode": "^1.1.37",
     "vscode-languageclient": "^9.0.1"
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
   }
 }
